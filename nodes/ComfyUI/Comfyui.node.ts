@@ -103,6 +103,7 @@ export class Comfyui implements INodeType {
 		if (apiKey) {
 			console.log('[ComfyUI] Using API key authentication');
 			headers['Authorization'] = `Bearer ${apiKey}`;
+			headers['ngrok-skip-browser-warning'] = ``;
 		}
 
 		try {
