@@ -37,6 +37,7 @@ export class ComfyUIApi implements ICredentialType {
 			method: 'GET',
 			headers: {
 				'Authorization': '={{$credentials?.apiKey ? `Bearer ${$credentials.apiKey}` : undefined}}',
+				'ngrok-skip-browser-warning': '',
 			},
 		},
 	};
